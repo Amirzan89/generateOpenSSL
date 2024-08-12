@@ -26,12 +26,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             <form action="./index.php" method="POST">
                 <div class="row row-cols-2">
                     <div class="p-3">
-                        <label for="privateKey" class="form-label">Private key</label>
-                        <textarea class="form-control" name="privateKey" id="privateKey" rows="25"><?php echo $privKey ?? null ?></textarea>
-                    </div>
-                    <div class="p-3">
                         <label for="publicKey" class="form-label">Public Key</label>
                         <textarea class="form-control" name="publicKey" id="publicKey" rows="25"><?php echo $pubKey ?? null ?></textarea>
+                    </div>
+                    <div class="p-3">
+                        <label for="privateKey" class="form-label">Private key</label>
+                        <textarea class="form-control" name="privateKey" id="privateKey" rows="25"><?php echo $privKey ?? null ?></textarea>
                     </div>
                     <div class="mt-5 text-end">
                         <button class="btn btn-primary" type="submit">Generate</button>
